@@ -7,7 +7,7 @@ CREATE TABLE `Users` (
 	PRIMARY KEY (`userId`)
 );
 
-CREATE TABLE `Warehouse` (
+CREATE TABLE `Warehouses` (
 	`userId` INT(8) NOT NULL,
 	`warehouseId` INT(8) NOT NULL,
 	`name` VARCHAR(16) NOT NULL,
@@ -49,3 +49,30 @@ CREATE TABLE `ProductWarehouses` (
 	`warehouseId` INT(8) NOT NULL,
 	`productId` INT(8) NOT NULL,
 );
+
+ALTER TABLE Warehouse
+ADD FOREIGN KEY (userId) REFERENCES Users(userId); 
+
+ALTER TABLE Deliveries
+ADD FOREIGN KEY (warehouseId) REFERENCES Warehouses(warehouseId);
+
+ALTER TABLE Removals
+ADD FOREIGN KEY (warehouseId) REFERENCES Warehouses(warehouseId); 
+
+ALTER TABLE ProductWarehouses
+ADD FOREIGN KEY (warehouseId) REFERENCES Warehouses(warehouseId); 
+
+ALTER TABLE ProductWarehouses
+ADD FOREIGN KEY (productId) REFERENCES Products(productId); 
+
+ALTER TABLE ProductDeliveries
+ADD FOREIGN KEY (deliveryId) REFERENCES Deliveries(deliveryId); 
+
+ALTER TABLE ProductDeliveries
+ADD FOREIGN KEY (productId) REFERENCES Products(productId); 
+
+ALTER TABLE ProductRemovals
+ADD FOREIGN KEY (removalId) REFERENCES Removals(removalId);
+
+ALTER TABLE ProductRemovals
+ADD FOREIGN KEY (productId) REFERENCES Products(productId);
