@@ -2432,11 +2432,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
       "projectName": "BackendLibrary",
-      "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+      "projectPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
       "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\obj\\",
+      "outputPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
