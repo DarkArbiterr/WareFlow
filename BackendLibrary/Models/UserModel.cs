@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackendLibrary.Models
 {
-    internal class UserModel
+    public class UserModel
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -17,6 +17,14 @@ namespace BackendLibrary.Models
         public UserModel(int id, string? name, string? surname, string? email, string? password)
         {
             Id = id;
+            Name = name;
+            Surname = surname;
+            Email = email;
+            Password = password;
+        }
+
+        public UserModel(string? name, string? surname, string? email, string? password)
+        {
             Name = name;
             Surname = surname;
             Email = email;

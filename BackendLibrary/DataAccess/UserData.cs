@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackendLibrary.DataAccess
 {
-    internal class UserData : SqlConnector
+    public class UserData : SqlConnector
     {
 
     }

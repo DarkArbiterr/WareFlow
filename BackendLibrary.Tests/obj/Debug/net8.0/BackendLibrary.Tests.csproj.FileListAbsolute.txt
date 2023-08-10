@@ -1,0 +1,15 @@
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\bin\Debug\net8.0\BackendLibrary.Tests.deps.json
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\bin\Debug\net8.0\BackendLibrary.Tests.runtimeconfig.json
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\bin\Debug\net8.0\BackendLibrary.Tests.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\bin\Debug\net8.0\BackendLibrary.Tests.pdb
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.csproj.AssemblyReference.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.AssemblyInfoInputs.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.AssemblyInfo.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.csproj.CoreCompileInputs.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.sourcelink.json
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\refint\BackendLibrary.Tests.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.pdb
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\BackendLibrary.Tests.genruntimeconfig.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary.Tests\obj\Debug\net8.0\ref\BackendLibrary.Tests.dll
