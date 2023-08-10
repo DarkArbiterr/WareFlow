@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackendLibrary.Models
 {
-    internal class ProductModel
+    public class ProductModel
     {
         public int Id { get; set; }
         public int WarehouseId { get; set; }

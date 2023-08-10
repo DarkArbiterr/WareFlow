@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackendLibrary.DataAccess
 {
-    internal class SqlConnector
+    public class SqlConnector
     {
         public static readonly string connectionString = "server = localhost; user id = root; password=vaporwave;database=wareflow";
     }
