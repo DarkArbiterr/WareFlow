@@ -24,8 +24,5 @@ namespace BackendLibrary.Models
             Id = id;
         }
 
-        public WarehouseModel()
-        {
-        }
     }
 }
