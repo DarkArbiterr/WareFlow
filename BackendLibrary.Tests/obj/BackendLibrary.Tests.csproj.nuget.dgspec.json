@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {}
+    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {
+    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
         "projectName": "BackendLibrary.Tests",
-        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
+        "projectPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
         "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\obj\\",
+        "outputPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
-                "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj"
+              "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
+                "projectPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj"
               }
             }
           }
@@ -47,11 +47,57 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "XUnitPriorityOrderer": {
               "target": "Package",
               "version": "[1.0.3, )"
             },
             "xunit": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.abstractions": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "xunit.analyzers": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.core": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.5.0, )"
             }
@@ -76,14 +122,14 @@
         }
       }
     },
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
+    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
         "projectName": "BackendLibrary",
-        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+        "projectPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
         "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\obj\\",
+        "outputPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {}
+    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {}
   },
   "projects": {
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {
+    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
+        "projectUniqueName": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
         "projectName": "WareFlowApp",
-        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
+        "projectPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
         "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\obj\\",
+        "outputPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",

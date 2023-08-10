@@ -9,14 +9,19 @@ namespace BackendLibrary.Models
     public class ProductModel
     {
         public int Id { get; set; }
-        public int WarehouseId { get; set; }
-        public string? Date { get; set; }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
 
-        public ProductModel(int id, int warehouseId, string? date)
+        public ProductModel(int id, string? name, string? description) : this(id)
         {
-            Id = id;
-            WarehouseId = warehouseId;
-            Date = date;
+            Name = name;
+            Description = description;
+        }
+
+        public ProductModel(string? name, string? description)
+        {
+            Name = name;
+            Description = description;
         }
 
         public ProductModel(int id)

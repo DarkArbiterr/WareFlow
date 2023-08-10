@@ -20,7 +20,7 @@ namespace BackendLibrary.Tests.Tests
 
             Assert.NotNull(output);
         }
-
+        
         [Fact, Order(2)]
         public async void GetMaxIdShouldReturnInt()
         {
@@ -34,36 +34,36 @@ namespace BackendLibrary.Tests.Tests
         {
             var output = await Task.Run(() => UserData.GetUser("nieistniejacy email", "nieistniejace haslo"));
 
-            Assert.True(output.IdStudent == -1);
+            Assert.True(output.UserId == -1);
         }
-
+        
         [Fact, Order(4)]
-        public async void AddUserTest()
+        public async void InsertUserTest()
         {
-            UserModel newUser = new UserModel("imieI", "nazwiskoI", "emailI", "hasloI");
+            UserModel newUser = new UserModel("emailI", "hasloI", "imieI", "nazwiskoI");
             await Task.Run(() => UserData.InsertUser(newUser));
             UserModel addedUser = await Task.Run(() => UserData.GetUser("emailI", "hasloI"));
 
             try
             {
-                Assert.Equal(newUser, addedUser);
+                Assert.Equal(newUser.Email, addedUser.Email);
             }
             finally
             {
-                await Task.Run(() => UserData.DeleteUser(addedUser.Id));
+                await Task.Run(() => UserData.DeleteUser(addedUser.UserId));
             }
         }
-
+        
         [Fact, Order(5)]
         public async void DeleteUserTest()
         {
-            UserModel newUser = new UserModel("imieD", "nazwiskoD", "emailD", "hasloD");
+            UserModel newUser = new UserModel("emailD", "hasloD", "imieD", "nazwiskoD");
             await Task.Run(() => UserData.InsertUser(newUser));
             int id = await Task.Run(() => UserData.GetMaxId());
             await Task.Run(() => UserData.DeleteUser(id));
             UserModel deletedUser = await Task.Run(() => UserData.GetUser("emailD", "hasloD"));
 
-            Assert.Null(deletedUser);
+            Assert.Null(deletedUser.Email);
         }
     }
 }

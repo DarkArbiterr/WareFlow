@@ -8,32 +8,32 @@ namespace BackendLibrary.Models
 {
     public class UserModel
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public string? Surname { get; set; }
+        public int UserId { get; set; }
         public string? Email { get; set; }
         public string? Password { get; set; }
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
 
-        public UserModel(int id, string? name, string? surname, string? email, string? password)
+        public UserModel(int userId, string? email, string? password, string? name, string? surname)
         {
-            Id = id;
-            Name = name;
-            Surname = surname;
+            UserId = userId;
             Email = email;
             Password = password;
-        }
-
-        public UserModel(string? name, string? surname, string? email, string? password)
-        {
             Name = name;
             Surname = surname;
-            Email = email;
-            Password = password;
         }
 
-        public UserModel(int id)
+        public UserModel(string? email, string? password, string? name, string? surname)
         {
-            Id = id;
+            Email = email;
+            Password = password;
+            Name = name;
+            Surname = surname;
+        }
+
+        public UserModel(int userId)
+        {
+            UserId = userId;
         }
 
         public UserModel()
