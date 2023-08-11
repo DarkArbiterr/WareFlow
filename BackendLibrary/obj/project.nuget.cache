@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qQpRZMT8+ViW1KVsI/Ji4jmFYB0yaqD0O2PPpEHaQRCrs+SpGRYMLZpVi7u5TuFNnwXTKUx0Kp5NrqovVdEQVw==",
+  "dgSpecHash": "17TNq6GgiSzA2DFLuwjhtlNEHSKJaNj+/CGC/Zi6D2mzp3kngttNXUGIS2oHs3Ty92AYa0uvQr19MtZNhoLqGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+  "projectFilePath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

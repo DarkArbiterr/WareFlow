@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {}
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
+        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj",
         "projectName": "WareFlowApp",
-        "projectPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
+        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj",
         "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow\\WareFlowApp\\obj\\",
+        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.143, )"
+            },
+            "MahApps.Metro.IconPacks.Material": {
+              "target": "Package",
+              "version": "[4.11.0, )"
             },
             "MySql.Data": {
               "target": "Package",
