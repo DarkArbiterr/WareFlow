@@ -1,10 +1,10 @@
-CREATE DATABASE  IF NOT EXISTS `wareflow` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `wareflow`
 USE `wareflow`;
--- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: localhost    Database: wareflow
 -- ------------------------------------------------------
--- Server version	8.0.21
+-- Server version	8.1.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -40,6 +40,7 @@ CREATE TABLE `delivery` (
 
 LOCK TABLES `delivery` WRITE;
 /*!40000 ALTER TABLE `delivery` DISABLE KEYS */;
+INSERT INTO `delivery` VALUES (1,1,'2023-08-11 18:38:19.000000'),(2,1,'2023-08-10 18:38:19.000000'),(3,2,'2023-08-09 18:38:19.000000'),(4,3,'2023-08-08 18:38:19.000000'),(5,3,'2023-08-07 18:38:19.000000');
 /*!40000 ALTER TABLE `delivery` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,6 +65,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,'Laptop','High-performance laptop for professionals'),(2,'Smartphone','Latest flagship smartphone with advanced features'),(3,'Monitor','27\" IPS monitor with full HD resolution'),(4,'Printer','Color inkjet printer for home and office use'),(5,'Wireless Mouse','Ergonomic wireless mouse for better productivity');
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,6 +92,7 @@ CREATE TABLE `productdelivery` (
 
 LOCK TABLES `productdelivery` WRITE;
 /*!40000 ALTER TABLE `productdelivery` DISABLE KEYS */;
+INSERT INTO `productdelivery` VALUES (1,1),(1,2),(2,3),(3,4),(4,5);
 /*!40000 ALTER TABLE `productdelivery` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,6 +119,7 @@ CREATE TABLE `productremoval` (
 
 LOCK TABLES `productremoval` WRITE;
 /*!40000 ALTER TABLE `productremoval` DISABLE KEYS */;
+INSERT INTO `productremoval` VALUES (1,1),(1,2),(2,3),(3,4),(4,5);
 /*!40000 ALTER TABLE `productremoval` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,6 +146,7 @@ CREATE TABLE `productwarehouse` (
 
 LOCK TABLES `productwarehouse` WRITE;
 /*!40000 ALTER TABLE `productwarehouse` DISABLE KEYS */;
+INSERT INTO `productwarehouse` VALUES (1,1),(2,2),(1,3),(3,4),(2,5);
 /*!40000 ALTER TABLE `productwarehouse` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -168,6 +173,7 @@ CREATE TABLE `removal` (
 
 LOCK TABLES `removal` WRITE;
 /*!40000 ALTER TABLE `removal` DISABLE KEYS */;
+INSERT INTO `removal` VALUES (1,1,'2023-08-10 18:39:04.000000'),(2,1,'2023-08-09 18:39:04.000000'),(3,2,'2023-08-08 18:39:04.000000'),(4,3,'2023-08-07 18:39:04.000000'),(5,3,'2023-08-06 18:39:04.000000');
 /*!40000 ALTER TABLE `removal` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -185,7 +191,7 @@ CREATE TABLE `user` (
   `firstName` varchar(16) NOT NULL,
   `secondName` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,6 +200,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'john.doe@example.com','5ebe2294ecd0e0f08eab7690d2a6ee69','John','Doe'),(2,'jane.smith@example.com','34819d7beeabb9260a5c854bc85b3e44','Jane','Smith'),(3,'michael.johnson@example.com','bb8be419bbfa7e13773c7df4c2ebce7f','Michael','Johnson'),(4,'emily.brown@example.com','6d6d6c0c8f1b3db34de84374a931311c','Emily','Brown'),(5,'david.wilson@example.com','52f6d15043808a81058a426b30649d8f','David','Wilson');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -220,6 +227,7 @@ CREATE TABLE `warehouse` (
 
 LOCK TABLES `warehouse` WRITE;
 /*!40000 ALTER TABLE `warehouse` DISABLE KEYS */;
+INSERT INTO `warehouse` VALUES (1,1,'Main'),(2,2,'Regional_1A'),(3,3,'Regional_1B');
 /*!40000 ALTER TABLE `warehouse` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -232,4 +240,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-10  2:40:43
+-- Dump completed on 2023-08-11 20:22:07
