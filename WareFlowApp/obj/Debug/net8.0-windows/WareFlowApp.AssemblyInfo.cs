@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WareFlowApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48b19cbce9eae92df0b0f75df0f2bcd470f507f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62c2a9fca3c5b2d515346b1acd7cf7812ab82cbd")]
 [assembly: System.Reflection.AssemblyProductAttribute("WareFlowApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WareFlowApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

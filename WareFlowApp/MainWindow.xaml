@@ -3,11 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
         xmlns:local="clr-namespace:WareFlowApp" xmlns:IconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:media="clr-namespace:System.Windows.Media;assembly=PresentationCore"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="380"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize">
+
+
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -24,12 +29,63 @@
                 </Border.Background>
             </Border>
 
-            <IconPacks:PackIconMaterial Kind="CloseThick" 
-                                        VerticalAlignment="Top" 
-                                        HorizontalAlignment="Right"
-                                        Margin="0,20,20,0"
-                                        Width="20"
-                                        Height="20"/>
+            <StackPanel VerticalAlignment="Top" Orientation="Horizontal">
+                <Button Margin="290,0,0,0" Width="45" Height="40" Background="Transparent" BorderThickness="0" Click="MinimizeButtonClick">
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="0,0,0,10"/>
+                                            <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <IconPacks:PackIconMaterial Kind="MinusThick" Width="10" Height="30" Foreground="Black"/>
+                                            </Viewbox>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="Black"/>
+                                                <Setter TargetName="border" Property="Opacity" Value="0.2"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="border" Property="Opacity" Value="0.4"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Width="45" Height="40" Background="Transparent" BorderThickness="0" Click="ExitButtonClick">
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="0,10,0,0"/>
+                                            <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <IconPacks:PackIconMaterial Kind="CloseThick" Width="10" Height="30" Foreground="Black"/>
+                                            </Viewbox>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="Black"/>
+                                                <Setter TargetName="border" Property="Opacity" Value="0.2"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="border" Property="Opacity" Value="0.4"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+            
 
             <StackPanel VerticalAlignment="Center">
                 <Image Source="/Images/trolley-cart.png" Width="80"/>
@@ -55,7 +111,8 @@
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"
                              Height="25"
-                             Margin="63,0,0,0"/>
+                             Margin="63,0,0,0"
+                             Name="emailBox"/>
                     <IconPacks:PackIconMaterial Kind="AccountTie" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"/>
@@ -78,7 +135,8 @@
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"
                              Height="25"
-                             Margin="63,0,0,0"/>
+                             Margin="63,0,0,0"
+                             Name="passwordBox"/>
                     <IconPacks:PackIconMaterial Kind="FormTextboxPassword" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"/>
@@ -96,8 +154,8 @@
                                     <Setter.Value>
                                         <ControlTemplate TargetType="Button">
                                             <Grid>
-                                                <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="15"/>
-                                                <TextBlock Text="{TemplateBinding Content}" Foreground="White" Opacity="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <Border x:Name="border" MouseDown="LoginButtonClick" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="15"/>
+                                                <TextBlock Text="{TemplateBinding Content}" Foreground="#FFF58F70" Opacity="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                             </Grid>
                                             <ControlTemplate.Triggers>
                                                 <Trigger Property="IsMouseOver" Value="True">
@@ -121,7 +179,7 @@
                                         <ControlTemplate TargetType="Button">
                                             <Grid>
                                                 <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="15"/>
-                                                <TextBlock Text="{TemplateBinding Content}" Foreground="White" Opacity="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{TemplateBinding Content}" Foreground="#FFF58F70" Opacity="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                             </Grid>
                                             <ControlTemplate.Triggers>
                                                 <Trigger Property="IsMouseOver" Value="True">

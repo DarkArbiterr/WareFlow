@@ -11,3 +11,16 @@ C:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary\obj\Debug\net8.0\Backe
 C:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary\obj\Debug\net8.0\refint\BackendLibrary.dll
 C:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.pdb
 C:\Users\DarkArbiter\Source\Repos\WareFlow\BackendLibrary\obj\Debug\net8.0\ref\BackendLibrary.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\bin\Debug\net8.0\BackendLibrary.deps.json
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\bin\Debug\net8.0\BackendLibrary.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\bin\Debug\net8.0\BackendLibrary.pdb
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.csproj.AssemblyReference.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.AssemblyInfoInputs.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.AssemblyInfo.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.csproj.CoreCompileInputs.cache
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.sourcelink.json
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\refint\BackendLibrary.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.pdb
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\ref\BackendLibrary.dll
