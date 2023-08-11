@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj": {}
+    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {}
   },
   "projects": {
-    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj": {
+    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\WareFlowApp\\WareFlowApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj",
+        "projectUniqueName": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
         "projectName": "WareFlowApp",
-        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj",
-        "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\obj\\",
+        "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\WareFlowApp\\WareFlowApp.csproj",
+        "packagesPath": "C:\\Users\\Grancu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\WareFlowApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Grancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,32 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.0.143, )"
-            },
-            "MahApps.Metro.IconPacks.Material": {
-              "target": "Package",
-              "version": "[4.11.0, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.1.0, )"
-            },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -71,15 +54,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
