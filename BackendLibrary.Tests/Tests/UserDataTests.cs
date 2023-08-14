@@ -32,7 +32,7 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(3)]
         public async void GetUserTest()
         {
-            var output = await Task.Run(() => UserData.GetProduct(-1, "falszywa_nazwa_produktu"));
+            var output = await Task.Run(() => UserData.GetUser("false_name", "false_email"));
 
             Assert.True(output.UserId == -1);
         }
