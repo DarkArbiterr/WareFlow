@@ -12,7 +12,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BackendLibrary.DataAccess
 {
-    public class WarehouseData
+    public class WarehouseData : SqlConnector
     {
         public static ObservableCollection<WarehouseModel> GetAllWarehouses()
         {
