@@ -200,7 +200,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'john.doe@example.com','5ebe2294ecd0e0f08eab7690d2a6ee69','John','Doe'),(2,'jane.smith@example.com','34819d7beeabb9260a5c854bc85b3e44','Jane','Smith'),(3,'michael.johnson@example.com','bb8be419bbfa7e13773c7df4c2ebce7f','Michael','Johnson'),(4,'emily.brown@example.com','6d6d6c0c8f1b3db34de84374a931311c','Emily','Brown'),(5,'david.wilson@example.com','52f6d15043808a81058a426b30649d8f','David','Wilson');
+INSERT INTO `user` VALUES (0,'fakemail','fakeuser','fake','faker'),(1,'john.doe@example.com','5ebe2294ecd0e0f08eab7690d2a6ee69','John','Doe'),(2,'jane.smith@example.com','34819d7beeabb9260a5c854bc85b3e44','Jane','Smith'),(3,'michael.johnson@example.com','bb8be419bbfa7e13773c7df4c2ebce7f','Michael','Johnson'),(4,'emily.brown@example.com','6d6d6c0c8f1b3db34de84374a931311c','Emily','Brown'),(5,'david.wilson@example.com','52f6d15043808a81058a426b30649d8f','David','Wilson');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
