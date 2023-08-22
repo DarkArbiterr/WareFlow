@@ -110,5 +110,22 @@ namespace BackendLibrary.DataAccess
                 }
             }
         }
+
+        public static void DeleteProduct(string name)
+        {
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                string sql = $"DELETE FROM product WHERE name = @name";
+                var parameters = new {name = name };
+
+                try
+                {
+                    connection.Query<ProductModel>(sql, parameters);
+                }
+                catch
+                {
+                }
+            }
+        }
     }
 }

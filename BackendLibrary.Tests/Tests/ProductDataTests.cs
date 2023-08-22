@@ -7,6 +7,7 @@ using BackendLibrary.Models;
 using BackendLibrary.DataAccess;
 using Xunit;
 using XUnitPriorityOrderer;
+using Xunit.Abstractions;
 
 namespace BackendLibrary.Tests.Tests
 {
@@ -70,7 +71,7 @@ namespace BackendLibrary.Tests.Tests
             }
             finally
             {
-                await Task.Run(() => ProductData.DeleteProduct(addedProduct.Id, addedProduct.Name));
+                await Task.Run(() => ProductData.DeleteProduct(addedProduct.Name));
             }
         }
     }
