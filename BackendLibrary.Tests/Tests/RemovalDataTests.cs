@@ -40,13 +40,13 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(4)]
         public async void InsertRemovalTest()
         {
-            RemovalModel newRemoval = new RemovalModel(-2137);
+            RemovalModel newRemoval = new RemovalModel(0, 1, "1970-01-01");
             await Task.Run(() => RemovalData.InsertRemoval(newRemoval));
-            RemovalModel addedRemoval = await Task.Run(() => RemovalData.GetRemoval(-2137));
+            RemovalModel addedRemoval = await Task.Run(() => RemovalData.GetRemoval(RemovalData.GetMaxId()));
 
             try
             {
-                Assert.Equal(newRemoval.Id, addedRemoval.Id);
+                Assert.Equal(addedRemoval.Date, "01/01/1970 00:00:00");
             }
             finally
             {
@@ -57,13 +57,13 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(5)]
         public async void DeleteRemovalTest()
         {
-            RemovalModel newRemoval = new RemovalModel(-2137);
+            RemovalModel newRemoval = new RemovalModel(0, 1, "1970-01-01");
             await Task.Run(() => RemovalData.InsertRemoval(newRemoval));
             int id = await Task.Run(() => RemovalData.GetMaxId());
             await Task.Run(() => RemovalData.DeleteRemoval(id));
-            RemovalModel deletedRemoval = await Task.Run(() => RemovalData.GetRemoval(-2137));
+            RemovalModel deletedRemoval = await Task.Run(() => RemovalData.GetRemoval(id));
 
-            Assert.Null(deletedRemoval.Id);
+            Assert.Equal(deletedRemoval.Id, -1);
         }
     }
 }

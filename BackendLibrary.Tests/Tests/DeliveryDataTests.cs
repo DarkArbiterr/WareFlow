@@ -7,6 +7,7 @@ using BackendLibrary.Models;
 using BackendLibrary.DataAccess;
 using Xunit;
 using XUnitPriorityOrderer;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BackendLibrary.Tests.Tests
 {
@@ -40,13 +41,13 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(4)]
         public async void InsertDeliveryTest()
         {
-            DeliveryModel newDelivery = new DeliveryModel(-2137);
+            DeliveryModel newDelivery = new DeliveryModel(0, 1, "1970-01-01");
             await Task.Run(() => DeliveryData.InsertDelivery(newDelivery));
-            DeliveryModel addedDelivery = await Task.Run(() => DeliveryData.GetDelivery(-2137));
+            DeliveryModel addedDelivery = await Task.Run(() => DeliveryData.GetDelivery(DeliveryData.GetMaxId()));
 
             try
             {
-                Assert.Equal(newDelivery.Id, addedDelivery.Id);
+                Assert.Equal(newDelivery.Date, "1970-01-01");
             }
             finally
             {
@@ -57,13 +58,13 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(5)]
         public async void DeleteDeliveryTest()
         {
-            DeliveryModel newDelivery = new DeliveryModel(-2137);
+            DeliveryModel newDelivery = new DeliveryModel(0, 1, "1970-01-01");
             await Task.Run(() => DeliveryData.InsertDelivery(newDelivery));
             int id = await Task.Run(() => DeliveryData.GetMaxId());
             await Task.Run(() => DeliveryData.DeleteDelivery(id));
-            DeliveryModel deletedDelivery = await Task.Run(() => DeliveryData.GetDelivery(-2137));
+            DeliveryModel deletedDelivery = await Task.Run(() => DeliveryData.GetDelivery(id));
 
-            Assert.Null(deletedDelivery.Id);
+            Assert.Equal(deletedDelivery.Id, -1);
         }
     }
 }

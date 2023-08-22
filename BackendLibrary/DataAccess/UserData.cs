@@ -74,7 +74,7 @@ namespace BackendLibrary.DataAccess
             using (IDbConnection connection = new MySqlConnection(connectionString)) 
             {
                 string sql = "INSERT INTO user" +
-                             "(email, password, name, surname) VALUES" +
+                             "(email, password, firstName, secondName) VALUES" +
                              "(@Email, @Password, @Name, @Surname)";
                 var parameters = new { Email = newUser.Email, Password = newUser.Password, 
                                        Name = newUser.Name, Surname = newUser.Surname };
