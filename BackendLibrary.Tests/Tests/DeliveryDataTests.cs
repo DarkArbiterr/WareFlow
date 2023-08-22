@@ -16,7 +16,7 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(1)]
         public async void GetAllDeliverysReturnNotNull()
         {
-            var output = await Task.Run(() => DeliveryData.GetAllDeliverys());
+            var output = await Task.Run(() => DeliveryData.GetAllDeliveries());
 
             Assert.NotNull(output);
         }
@@ -34,7 +34,7 @@ namespace BackendLibrary.Tests.Tests
         {
             var output = await Task.Run(() => DeliveryData.GetDelivery(-2137));
 
-            Assert.True(output.DeliveryId == -1);
+            Assert.True(output.Id == -1);
         }
 
         [Fact, Order(4)]
@@ -50,7 +50,7 @@ namespace BackendLibrary.Tests.Tests
             }
             finally
             {
-                await Task.Run(() => DeliveryData.DeleteDelivery(addedDelivery.DeliveryId));
+                await Task.Run(() => DeliveryData.DeleteDelivery(addedDelivery.Id));
             }
         }
 

@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `wareflow`
+CREATE DATABASE  IF NOT EXISTS `wareflow`;
 USE `wareflow`;
 -- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `delivery`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `delivery` (
-  `deliveryId` int NOT NULL,
+  `deliveryId` int NOT NULL AUTO_INCREMENT,
   `warehouseId` int NOT NULL,
   `date` datetime(6) NOT NULL,
   PRIMARY KEY (`deliveryId`),
@@ -52,7 +52,7 @@ DROP TABLE IF EXISTS `product`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `product` (
-  `productId` int NOT NULL,
+  `productId` int NOT NULL AUTO_INCREMENT,
   `name` varchar(16) NOT NULL,
   `desc` varchar(128) NOT NULL,
   PRIMARY KEY (`productId`)
@@ -158,7 +158,7 @@ DROP TABLE IF EXISTS `removal`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `removal` (
-  `removalId` int NOT NULL,
+  `removalId` int NOT NULL AUTO_INCREMENT,
   `warehouseId` int NOT NULL,
   `date` datetime(6) NOT NULL,
   PRIMARY KEY (`removalId`),
@@ -213,7 +213,7 @@ DROP TABLE IF EXISTS `warehouse`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `warehouse` (
   `userId` int NOT NULL,
-  `warehouseId` int NOT NULL,
+  `warehouseId` int NOT NULL ,
   `name` varchar(16) NOT NULL,
   PRIMARY KEY (`warehouseId`),
   KEY `userId` (`userId`),

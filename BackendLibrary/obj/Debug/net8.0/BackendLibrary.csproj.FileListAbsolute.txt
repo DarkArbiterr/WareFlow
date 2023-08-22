@@ -24,3 +24,16 @@ D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\Ba
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\refint\BackendLibrary.dll
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\BackendLibrary.pdb
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\BackendLibrary\obj\Debug\net8.0\ref\BackendLibrary.dll
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.csproj.AssemblyReference.cache
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.AssemblyInfoInputs.cache
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.AssemblyInfo.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.sourcelink.json
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.dll
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\refint\BackendLibrary.dll
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\BackendLibrary.pdb
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\bin\Debug\net8.0\BackendLibrary.deps.json
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\bin\Debug\net8.0\BackendLibrary.dll
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\bin\Debug\net8.0\BackendLibrary.pdb
+C:\Users\Grancu\Documents\GitHub\WareFlow\BackendLibrary\obj\Debug\net8.0\ref\BackendLibrary.dll

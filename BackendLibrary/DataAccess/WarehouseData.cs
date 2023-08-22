@@ -38,7 +38,7 @@ namespace BackendLibrary.DataAccess
             }
         }
 
-        public static WarehouseModel GetWarehouse(string id)
+        public static WarehouseModel GetWarehouse(int id)
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {

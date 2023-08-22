@@ -10,6 +10,7 @@ using XUnitPriorityOrderer;
 
 namespace BackendLibrary.Tests.Tests
 {
+    [Order(1)]
     public class WarehouseDataTests : BaseTestClass
     {
         [Fact, Order(1)]
@@ -33,7 +34,7 @@ namespace BackendLibrary.Tests.Tests
         {
             var output = await Task.Run(() => WarehouseData.GetWarehouse(-1));
 
-            Assert.True(output.warehouseId == -1);
+            Assert.True(output.Id == -1);
         }
 
         [Fact, Order(4)]
@@ -59,7 +60,7 @@ namespace BackendLibrary.Tests.Tests
             await Task.Run(() => WarehouseData.InsertWarehouse(newWarehouse));
             int id = await Task.Run(() => WarehouseData.GetMaxId());
             await Task.Run(() => WarehouseData.DeleteWarehouse(id));
-            WarehouseModel deletedWarehouse = await Task.Run(() => WarehouseData.GetWarehouse());
+            WarehouseModel deletedWarehouse = await Task.Run(() => WarehouseData.GetWarehouse(id));
 
             Assert.Null(deletedWarehouse.Id);
         }
