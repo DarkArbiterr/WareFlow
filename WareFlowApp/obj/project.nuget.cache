@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qim5+5bTvK/ziuvGX4r7Ku6HWaPS0fOC075g/Ft4JWcIRsbrRtzFKDFd2x5sKdOewB3B/SeRCrBjTn5nfIXSsg==",
+  "dgSpecHash": "ngbgpEGLykRrpY3yS8isW27/9NOxlmw4YA2ous6v8MhyD/Pn/lkkM7uscsxK4XDUTwWrIdWLvg3igpCjZkK33A==",
   "success": true,
   "projectFilePath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\WareFlowApp\\WareFlowApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
+    "C:\\Users\\DarkArbiter\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.5\\k4os.compression.lz4.streams.1.3.5.nupkg.sha512",
@@ -130,5 +131,16 @@
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\xunitpriorityorderer\\1.0.3\\xunitpriorityorderer.1.0.3.nupkg.sha512",
     "C:\\Users\\DarkArbiter\\.nuget\\packages\\zstdsharp.port\\0.7.1\\zstdsharp.port.0.7.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pakiet „FontAwesome.WPF 4.7.0.9” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „net8.0-windows7.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "libraryId": "FontAwesome.WPF",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

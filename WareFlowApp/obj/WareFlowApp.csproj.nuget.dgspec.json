@@ -244,6 +244,10 @@
               "target": "Package",
               "version": "[2.0.143, )"
             },
+            "FontAwesome.WPF": {
+              "target": "Package",
+              "version": "[4.7.0.9, )"
+            },
             "MahApps.Metro.IconPacks.Material": {
               "target": "Package",
               "version": "[4.11.0, )"

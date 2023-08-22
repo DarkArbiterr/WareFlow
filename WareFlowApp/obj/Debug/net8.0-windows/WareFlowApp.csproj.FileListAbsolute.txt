@@ -195,3 +195,5 @@ D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windo
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\BackendLibrary.Tests.dll
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\BackendLibrary.Tests.pdb
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\CustomStyles.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\FontAwesome.WPF.dll

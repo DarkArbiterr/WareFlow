@@ -20,6 +20,7 @@ namespace WareFlowApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool isDragging = false;
         private UserModel loggedUser = new UserModel();
 
         public void Login()
@@ -67,6 +68,28 @@ namespace WareFlowApp
                 this.Visibility = Visibility.Hidden;
                 appWindow.Show();
             }
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                isDragging = true;
+                this.DragMove();
+            }
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging && e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void Window_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            isDragging = false;
         }
     }
 }

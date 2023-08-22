@@ -8,10 +8,10 @@
         xmlns:local="clr-namespace:WareFlowApp" xmlns:IconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:media="clr-namespace:System.Windows.Media;assembly=PresentationCore"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="380"
-        AllowsTransparency="True" Background="Transparent"
-        WindowStyle="None" ResizeMode="NoResize">
-
+        Title="MainWindow" Height="450" Width="380" Background="Transparent" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        MouseMove="Window_MouseMove"
+        MouseUp="Window_MouseUp">
 
     <Grid>
         <Grid>
@@ -85,7 +85,7 @@
                     </Button.Resources>
                 </Button>
             </StackPanel>
-            
+
 
             <StackPanel VerticalAlignment="Center">
                 <Image Source="/Images/trolley-cart.png" Width="80"/>
