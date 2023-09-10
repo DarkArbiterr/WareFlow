@@ -10,7 +10,8 @@ using XUnitPriorityOrderer;
 
 namespace BackendLibrary.Tests.Tests
 {
-    internal class RemovalDataTests
+    [Order(4)]
+    public class RemovalDataTests
     {
         [Fact, Order(1)]
         public async void GetAllRemovalsReturnNotNull()
@@ -33,7 +34,7 @@ namespace BackendLibrary.Tests.Tests
         {
             var output = await Task.Run(() => RemovalData.GetRemoval(-2137));
 
-            Assert.True(output.RemovalId == -1);
+            Assert.True(output.Id == -1);
         }
 
         [Fact, Order(4)]
@@ -49,7 +50,7 @@ namespace BackendLibrary.Tests.Tests
             }
             finally
             {
-                await Task.Run(() => RemovalData.DeleteRemoval(addedRemoval.RemovalId));
+                await Task.Run(() => RemovalData.DeleteRemoval(addedRemoval.Id));
             }
         }
 
@@ -62,7 +63,7 @@ namespace BackendLibrary.Tests.Tests
             await Task.Run(() => RemovalData.DeleteRemoval(id));
             RemovalModel deletedRemoval = await Task.Run(() => RemovalData.GetRemoval(-2137));
 
-            Assert.Null(deletedRemoval.Id);
+            Assert.Null(deletedRemoval.Date);
         }
     }
 }

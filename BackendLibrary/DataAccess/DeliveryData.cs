@@ -78,8 +78,8 @@ namespace BackendLibrary.DataAccess
                              "(@WarehouseId, @Date)";
                 var parameters = new
                 {
-                    WarehouseId = newRemoval.WarehouseId,
-                    Date = newRemoval.Date,
+                    WarehouseId = newDelivery.WarehouseId,
+                    Date = newDelivery.Date,
                 };
 
                 connection.Execute(sql, parameters);

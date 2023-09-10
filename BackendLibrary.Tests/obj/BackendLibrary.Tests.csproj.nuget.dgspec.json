@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {}
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
+        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
         "projectName": "BackendLibrary.Tests",
-        "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
-        "packagesPath": "C:\\Users\\Grancu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\obj\\",
+        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
+        "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Grancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
-                "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj"
+              "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj": {
+                "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj"
               }
             }
           }
@@ -42,11 +38,70 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "XUnitPriorityOrderer": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.abstractions": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "xunit.analyzers": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.core": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,25 +113,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj",
         "projectName": "BackendLibrary",
-        "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
-        "packagesPath": "C:\\Users\\Grancu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\obj\\",
+        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj",
+        "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Grancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,11 +152,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -112,7 +185,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     }

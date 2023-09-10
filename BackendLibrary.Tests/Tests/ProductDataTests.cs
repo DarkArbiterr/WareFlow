@@ -10,6 +10,7 @@ using XUnitPriorityOrderer;
 
 namespace BackendLibrary.Tests.Tests
 {
+    [Order(3)]
     public class ProductDataTests
     {
         [Fact, Order(1)]
@@ -33,7 +34,7 @@ namespace BackendLibrary.Tests.Tests
         {
             var output = await Task.Run(() => ProductData.GetProductById(-2137));
 
-            Assert.True(output.ProductId == -1);
+            Assert.True(output.Id == -1);
         }
 
         [Fact, Order(4)]
@@ -41,7 +42,7 @@ namespace BackendLibrary.Tests.Tests
         {
             var output = await Task.Run(() => ProductData.GetProductByName("falszywa_nazwa_prodooktu"));
 
-            Assert.True(output.ProductId == -1);
+            Assert.True(output.Id == -1);
         }
 
         [Fact, Order(5)]
@@ -61,7 +62,7 @@ namespace BackendLibrary.Tests.Tests
         {
             ProductModel newProduct = new ProductModel("falszyna_nazwa", "falszywy_opis");
             await Task.Run(() => ProductData.InsertProduct(newProduct));
-            ProductModel addedProduct = await Task.Run(() => ProductData.GetProductByName());
+            ProductModel addedProduct = await Task.Run(() => ProductData.GetProductByName("falszyna_nazwa"));
 
             try
             {
@@ -69,7 +70,7 @@ namespace BackendLibrary.Tests.Tests
             }
             finally
             {
-                await Task.Run(() => ProductData.DeleteProduct(addedProduct.ProductId, addedProduct.Name));
+                await Task.Run(() => ProductData.DeleteProduct(addedProduct.Id));
             }
         }
     }

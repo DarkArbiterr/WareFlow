@@ -93,11 +93,11 @@ namespace BackendLibrary.DataAccess
             }
         }
 
-        public static void DeleteProduct(int id, string name)
+        public static void DeleteProduct(int id)
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = $"DELETE FROM product WHERE productId = {id} AND name = {name}";
+                string sql = $"DELETE FROM product WHERE productId = {id}";
 
                 connection.Execute(sql);
             }

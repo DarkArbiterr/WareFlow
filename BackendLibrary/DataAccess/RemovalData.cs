@@ -12,7 +12,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BackendLibrary.DataAccess
 {
-    internal class RemovalData
+    public class RemovalData : SqlConnector
     {
         public static ObservableCollection<RemovalModel> GetAllRemovals()
         {

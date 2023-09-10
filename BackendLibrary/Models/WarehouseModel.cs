@@ -19,6 +19,12 @@ namespace BackendLibrary.Models
             Name = name;
         }
 
+        public WarehouseModel(int userId, string? name)
+        {
+            UserId = userId;
+            Name = name;
+        }
+
         public WarehouseModel(int id)
         {
             Id = id;

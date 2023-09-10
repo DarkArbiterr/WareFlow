@@ -19,6 +19,12 @@ namespace BackendLibrary.Models
             Date = date;
         }
 
+        public RemovalModel(int warehouseId, string? date)
+        {
+            WarehouseId = warehouseId;
+            Date = date;
+        }
+
         public RemovalModel(int id)
         {
             Id = id;

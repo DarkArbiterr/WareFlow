@@ -11,13 +11,15 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("BackendLibrary")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("WareFlowApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fad75c43cfcc5b67c7167e5054713838a40df67")]
-[assembly: System.Reflection.AssemblyProductAttribute("BackendLibrary")]
-[assembly: System.Reflection.AssemblyTitleAttribute("BackendLibrary")]
+[assembly: System.Reflection.AssemblyProductAttribute("WareFlowApp")]
+[assembly: System.Reflection.AssemblyTitleAttribute("WareFlowApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.
 
