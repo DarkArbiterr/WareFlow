@@ -1,0 +1,7 @@
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe.config
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.pdb
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.csproj.AssemblyReference.cache
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.exe
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.pdb
