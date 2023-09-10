@@ -43,7 +43,7 @@ namespace BackendLibrary.DataAccess
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
                 string sql = "SELECT * FROM warehouse " +
-                             "WHERE warehouseId = Id";
+                             "WHERE warehouseId = @Id;";
                 var parameters = new { Id = id };
 
                 try

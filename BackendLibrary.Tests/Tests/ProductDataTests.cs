@@ -7,6 +7,7 @@ using BackendLibrary.Models;
 using BackendLibrary.DataAccess;
 using Xunit;
 using XUnitPriorityOrderer;
+using Xunit.Abstractions;
 
 namespace BackendLibrary.Tests.Tests
 {
@@ -51,8 +52,8 @@ namespace BackendLibrary.Tests.Tests
             ProductModel newProduct = new ProductModel("falszyna_nazwa", "falszywy_opis");
             await Task.Run(() => ProductData.InsertProduct(newProduct));
             int id = await Task.Run(() => ProductData.GetMaxId());
-            await Task.Run(() => ProductData.DeleteProduct(id));
-            ProductModel deletedProduct = await Task.Run(() => ProductData.GetProductByName("falszyna_nazwa"));
+            await Task.Run(() => ProductData.DeleteProduct(id, "falszyna_nazwa"));
+            ProductModel deletedProduct = await Task.Run(() => ProductData.GetProductById(id));
 
             Assert.Null(deletedProduct.Name);
         }

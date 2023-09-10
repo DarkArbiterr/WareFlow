@@ -9,6 +9,7 @@ using System.Data;
 using Dapper;
 using System.Linq;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace BackendLibrary.DataAccess
 {
@@ -69,7 +70,7 @@ namespace BackendLibrary.DataAccess
             }
         }
 
-        public static void InsertDelivery(DeliveryModel newDelivery)
+        public static void InsertDelivery(DeliveryModel newRemoval)
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {

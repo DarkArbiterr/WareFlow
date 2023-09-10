@@ -40,14 +40,15 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(4)]
         public async void InsertWarehouseTest()
         {
-            WarehouseModel newWarehouse = new WarehouseModel(-2137);
+            WarehouseModel newWarehouse = new WarehouseModel(0, 0, "test_warehouse");
             await Task.Run(() => WarehouseData.InsertWarehouse(newWarehouse));
-            WarehouseModel addedWarehouse = await Task.Run(() => WarehouseData.GetWarehouse(-2137));
+            WarehouseModel addedWarehouse = await Task.Run(() => WarehouseData.GetWarehouse(0));
 
             try
             {
-                Assert.Equal(newWarehouse.Id, addedWarehouse.Id);
+                Assert.Equal(newWarehouse.Name, addedWarehouse.Name);
             }
+
             finally
             {
                 await Task.Run(() => WarehouseData.DeleteWarehouse(addedWarehouse.Id));
@@ -57,7 +58,7 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(5)]
         public async void DeleteWarehouseTest()
         {
-            WarehouseModel newWarehouse = new WarehouseModel();
+            WarehouseModel newWarehouse = new WarehouseModel(0, 0, "test_warehouse");
             await Task.Run(() => WarehouseData.InsertWarehouse(newWarehouse));
             int id = await Task.Run(() => WarehouseData.GetMaxId());
             await Task.Run(() => WarehouseData.DeleteWarehouse(id));

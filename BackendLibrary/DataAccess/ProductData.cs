@@ -64,7 +64,7 @@ namespace BackendLibrary.DataAccess
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
                 string sql = "SELECT * FROM product " +
-                             "WHERE productId = @Id";
+                             "WHERE name = @Name";
                 var parameters = new { Name = name };
 
                 try
@@ -85,21 +85,46 @@ namespace BackendLibrary.DataAccess
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
                 string sql = "INSERT INTO product" +
-                             "(name, desc) VALUES" +
-                             "( @Name, @Desc)";
+                    "(`name`, `desc`) VALUES" +
+                    "( @Name, @Desc)";
+
                 var parameters = new { Name = newProduct.Name, Desc = newProduct.Description };
 
                 connection.Execute(sql, parameters);
             }
         }
 
-        public static void DeleteProduct(int id)
+        public static void DeleteProduct(int id, string name)
+        {                
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                string sql = $"DELETE FROM product WHERE productId = @id AND name = @name";
+                var parameters = new { id = id , name = name};
+
+                try
+                {
+                    connection.Query<ProductModel>(sql, parameters);
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        public static void DeleteProduct(string name)
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = $"DELETE FROM product WHERE productId = {id}";
+                string sql = $"DELETE FROM product WHERE name = @name";
+                var parameters = new {name = name };
 
-                connection.Execute(sql);
+                try
+                {
+                    connection.Query<ProductModel>(sql, parameters);
+                }
+                catch
+                {
+                }
             }
         }
     }
