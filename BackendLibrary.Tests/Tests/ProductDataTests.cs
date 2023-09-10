@@ -12,7 +12,7 @@ using Xunit.Abstractions;
 namespace BackendLibrary.Tests.Tests
 {
     [Order(3)]
-    public class ProductDataTests
+    public class ProductDataTests : BaseTestClass
     {
         [Fact, Order(1)]
         public async void GetAllProductsReturnNotNull()
@@ -52,7 +52,7 @@ namespace BackendLibrary.Tests.Tests
             ProductModel newProduct = new ProductModel("falszyna_nazwa", "falszywy_opis");
             await Task.Run(() => ProductData.InsertProduct(newProduct));
             int id = await Task.Run(() => ProductData.GetMaxId());
-            await Task.Run(() => ProductData.DeleteProduct(id, "falszyna_nazwa"));
+            await Task.Run(() => ProductData.DeleteProduct(id));
             ProductModel deletedProduct = await Task.Run(() => ProductData.GetProductById(id));
 
             Assert.Null(deletedProduct.Name);

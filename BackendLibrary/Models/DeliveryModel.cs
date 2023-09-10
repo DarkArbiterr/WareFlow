@@ -19,6 +19,12 @@ namespace BackendLibrary.Models
             Date = date;
         }
 
+        public DeliveryModel(int warehouseId, string? date)
+        {
+            WarehouseId = warehouseId;
+            Date = date;
+        }
+
         public DeliveryModel(int id)
         {
             Id = id;

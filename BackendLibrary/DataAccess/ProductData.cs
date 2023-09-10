@@ -94,12 +94,12 @@ namespace BackendLibrary.DataAccess
             }
         }
 
-        public static void DeleteProduct(int id, string name)
+        public static void DeleteProduct(int id)
         {                
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = $"DELETE FROM product WHERE productId = @id AND name = @name";
-                var parameters = new { id = id , name = name};
+                string sql = $"DELETE FROM product WHERE productId = @Id";
+                var parameters = new { Id = id };
 
                 try
                 {
@@ -111,21 +111,5 @@ namespace BackendLibrary.DataAccess
             }
         }
 
-        public static void DeleteProduct(string name)
-        {
-            using (IDbConnection connection = new MySqlConnection(connectionString))
-            {
-                string sql = $"DELETE FROM product WHERE name = @name";
-                var parameters = new {name = name };
-
-                try
-                {
-                    connection.Query<ProductModel>(sql, parameters);
-                }
-                catch
-                {
-                }
-            }
-        }
     }
 }

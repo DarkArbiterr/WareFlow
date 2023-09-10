@@ -10,7 +10,7 @@ using XUnitPriorityOrderer;
 
 namespace BackendLibrary.Tests.Tests
 {
-    [Order(1)]
+    [Order(4)]
     public class RemovalDataTests : BaseTestClass
     {
         [Fact, Order(1)]
@@ -46,7 +46,7 @@ namespace BackendLibrary.Tests.Tests
 
             try
             {
-                Assert.Equal(addedRemoval.Date, "01/01/1970 00:00:00");
+                Assert.Equal("01/01/1970 00:00:00", addedRemoval.Date);
             }
             finally
             {
@@ -63,7 +63,7 @@ namespace BackendLibrary.Tests.Tests
             await Task.Run(() => RemovalData.DeleteRemoval(id));
             RemovalModel deletedRemoval = await Task.Run(() => RemovalData.GetRemoval(id));
 
-            Assert.Equal(deletedRemoval.Id, -1);
+            Assert.Equal(-1, deletedRemoval.Id);
         }
     }
 }

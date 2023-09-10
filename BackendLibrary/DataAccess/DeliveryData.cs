@@ -70,11 +70,11 @@ namespace BackendLibrary.DataAccess
             }
         }
 
-        public static void InsertDelivery(DeliveryModel newRemoval)
+        public static void InsertDelivery(DeliveryModel newDelivery)
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = "INSERT INTO removal" +
+                string sql = "INSERT INTO delivery" +
                              "(warehouseId, date) VALUES" +
                              "(@WarehouseId, @Date)";
                 var parameters = new

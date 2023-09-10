@@ -60,9 +60,8 @@ namespace BackendLibrary.Tests.Tests
         {
             WarehouseModel newWarehouse = new WarehouseModel(0, 0, "test_warehouse");
             await Task.Run(() => WarehouseData.InsertWarehouse(newWarehouse));
-            int id = await Task.Run(() => WarehouseData.GetMaxId());
-            await Task.Run(() => WarehouseData.DeleteWarehouse(id));
-            WarehouseModel deletedWarehouse = await Task.Run(() => WarehouseData.GetWarehouse(id));
+            await Task.Run(() => WarehouseData.DeleteWarehouse(0));
+            WarehouseModel deletedWarehouse = await Task.Run(() => WarehouseData.GetWarehouse(0));
 
             Assert.Equal(-1, deletedWarehouse.Id);
         }

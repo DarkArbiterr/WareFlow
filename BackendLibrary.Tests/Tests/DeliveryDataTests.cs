@@ -47,7 +47,7 @@ namespace BackendLibrary.Tests.Tests
 
             try
             {
-                Assert.Equal(newDelivery.Date, "1970-01-01");
+                Assert.Equal("1970-01-01", newDelivery.Date);
             }
             finally
             {
@@ -58,7 +58,7 @@ namespace BackendLibrary.Tests.Tests
         [Fact, Order(5)]
         public async void DeleteDeliveryTest()
         {
-            DeliveryModel newDelivery = new DeliveryModel(0, 1, "1970-01-01");
+            DeliveryModel newDelivery = new DeliveryModel(1, "1970-01-01");
             await Task.Run(() => DeliveryData.InsertDelivery(newDelivery));
             int id = await Task.Run(() => DeliveryData.GetMaxId());
             await Task.Run(() => DeliveryData.DeleteDelivery(id));

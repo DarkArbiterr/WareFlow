@@ -21,10 +21,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.5\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.5\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-<<<<<<< HEAD
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\DarkArbiter\.nuget\packages\xunit.analyzers\1.2.0</Pkgxunit_analyzers>
-=======
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Grancu\.nuget\packages\xunit.analyzers\1.2.0</Pkgxunit_analyzers>
->>>>>>> f913d84a1e3acae062ca1b468c06c3ae0aa8c318
   </PropertyGroup>
 </Project>
