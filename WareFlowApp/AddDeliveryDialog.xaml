@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WareFlowApp"
         mc:Ignorable="d"
-        Title="AddDeliveryDialog" Height="450" Width="800">
+        Title="Dodaj dostawę" Height="400" Width="600">
     <Grid>
-        
+        <!-- Row 0: DatePicker -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="10">
+            <Label Content="Data dostawy:" />
+            <DatePicker x:Name="datePicker" />
+        </StackPanel>
+
+        <!-- Row 1: Warehouse ID -->
+        <StackPanel Grid.Row="1" Margin="10">
+            <Label Content="ID Magazynu:" />
+            <TextBox x:Name="warehouseIdTextBox" />
+        </StackPanel>
+
+        <!-- Row 2: Product ListView -->
+        <ListView Grid.Row="2" Name="productListView" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Product.Id}" />
+                    <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Product.Name}" />
+                    <GridViewColumn Header="Description" Width="200" DisplayMemberBinding="{Binding Product.Description}" />
+                    <GridViewColumn Header="Select" Width="70">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Row 3: Add Button (in a separate row) -->
+        <Button Grid.Row="3" Content="Dodaj" Click="AddButton_Click" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>

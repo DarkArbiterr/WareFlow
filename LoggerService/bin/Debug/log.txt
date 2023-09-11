@@ -14,3 +14,5 @@
 [11.09.2023 20:00:58]: User TestUser added a new product
 [11.09.2023 20:01:08]: User TestUser deleted a product
 [11.09.2023 20:01:08]: User TestUser deleted a product
+[11.09.2023 22:05:30]: User TestUser added a new warehouse
+[11.09.2023 22:05:40]: User TestUser deleted a warehouse

@@ -112,5 +112,37 @@ namespace BackendLibrary.DataAccess
             }
         }
 
+        public static ObservableCollection<ProductModel> GetProductsByWarehouse(int warehouseId)
+        {
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                string sql = "SELECT p.productId AS Id, p.name AS Name, p.`desc` AS Description " +
+                             "FROM product p " +
+                             "INNER JOIN productwarehouse pw ON p.productId = pw.productId " +
+                             "WHERE pw.warehouseId = @WarehouseId";
+
+                var data = connection.Query<ProductModel>(sql, new { WarehouseId = warehouseId }).ToList();
+                ObservableCollection<ProductModel> data2 = new ObservableCollection<ProductModel>(data);
+
+                return data2;
+            }
+        }
+
+        public static ObservableCollection<ProductModel> GetProductsByDelivery(int deliveryId)
+        {
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                string sql = "SELECT p.productId AS Id, p.name AS Name, p.`desc` AS Description " +
+                             "FROM product p " +
+                             "INNER JOIN productdelivery pd ON p.productId = pd.productId " +
+                             "WHERE pd.deliveryId = @DeliveryId";
+
+                var data = connection.Query<ProductModel>(sql, new { DeliveryId = deliveryId }).ToList();
+                ObservableCollection<ProductModel> data2 = new ObservableCollection<ProductModel>(data);
+
+                return data2;
+            }
+        }
+
     }
 }

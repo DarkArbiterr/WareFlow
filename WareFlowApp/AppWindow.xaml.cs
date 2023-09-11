@@ -21,7 +21,6 @@ namespace WareFlowApp
     /// </summary>
     public partial class AppWindow : Window
     {
-        string serviceName = "WareflowLoggerService";
         public static ServiceController serviceController = new ServiceController("WareflowLoggerService");
         public AppWindow()
         {
@@ -31,7 +30,7 @@ namespace WareFlowApp
             {
                 if (serviceController.Status != ServiceControllerStatus.Running)
                 {
-                    string[] args = {"TestUser"};
+                    string[] args = { "TestUser" };
 
                     serviceController.Start(args);
                     serviceController.WaitForStatus(ServiceControllerStatus.Running, TimeSpan.FromSeconds(5));
@@ -83,6 +82,16 @@ namespace WareFlowApp
         private void ProductButtonClick(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new ProductPage();
+        }
+
+        private void WarehouseButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new WarehousePage();
+        }
+
+        private void DeliveriesButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new DeliveryPage();
         }
     }
 }

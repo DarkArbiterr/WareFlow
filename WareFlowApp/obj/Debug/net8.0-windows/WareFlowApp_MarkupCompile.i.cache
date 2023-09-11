@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\App.xaml
-71088739716
+11559481112
 1-760726084
-11-1256214137
+151413479363
 242-1334453704
-AddProductDialog.xaml;AddWarehouseDialog.xaml;AppWindow.xaml;CustomStyles.xaml;MainWindow.xaml;ProductPage.xaml;WarehousePage.xaml;
+AddDeliveryDialog.xaml;AddProductDialog.xaml;AddWarehouseDialog.xaml;AppWindow.xaml;CustomStyles.xaml;DeliveryPage.xaml;DeliveryProductsDialog.xaml;MainWindow.xaml;ProductPage.xaml;WarehousePage.xaml;WarehouseProductsDialog.xaml;
 
 True
 

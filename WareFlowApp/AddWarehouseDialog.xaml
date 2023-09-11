@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WareFlowApp"
         mc:Ignorable="d"
-        Title="AddWarehouseDialog" Height="450" Width="800">
+        Title="Dodaj magazyn" Height="150" Width="300">
     <Grid>
-        
+        <StackPanel Margin="10">
+            <Label Content="Nazwa:" />
+            <TextBox Name="nameTextBox" />
+            <Button Content="Dodaj" Click="AddButton_Click" />
+        </StackPanel>
     </Grid>
 </Window>

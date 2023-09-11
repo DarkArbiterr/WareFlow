@@ -18,7 +18,7 @@ namespace BackendLibrary.DataAccess
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM warehouse";
+                string sql = "SELECT `userId` AS UserId, `warehouseId` AS Id, `name` AS Name FROM warehouse";
                 var data = connection.Query<WarehouseModel>(sql).ToList();
 
                 ObservableCollection<WarehouseModel> data2 = new ObservableCollection<WarehouseModel>(data);

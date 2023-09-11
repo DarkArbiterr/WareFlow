@@ -29,7 +29,7 @@ namespace BackendLibrary.DataAccess
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM delivery";
+                string sql = "SELECT `deliveryId` AS Id, `warehouseId` AS WarehouseId, `date` AS Date FROM delivery";
                 var data = connection.Query<DeliveryModel>(sql).ToList();
 
                 ObservableCollection<DeliveryModel> data2 = new ObservableCollection<DeliveryModel>(data);
@@ -84,6 +84,24 @@ namespace BackendLibrary.DataAccess
                 };
 
                 connection.Execute(sql, parameters);
+            }
+        }
+
+        public static void InsertDeliveryProducts(int deliveryId, ObservableCollection<ProductModel>selectedProducts)
+        {
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                foreach (var product in selectedProducts)
+                {
+                    string sql = "INSERT INTO productdelivery (deliveryId, productId) VALUES (@DeliveryId, @ProductId);";
+                    var parameters = new
+                    {
+                        DeliveryId = deliveryId,
+                        ProductId = product.Id,
+                    };
+
+                    connection.Execute(sql, parameters);
+                }
             }
         }
     }

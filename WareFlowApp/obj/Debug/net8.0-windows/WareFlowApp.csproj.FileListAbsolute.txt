@@ -362,3 +362,11 @@ C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\A
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\WarehousePage.baml
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddWarehouseDialog.baml
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddDeliveryDialog.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\DeliveryPage.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\DeliveryProductsDialog.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\WarehouseProductsDialog.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddDeliveryDialog.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\DeliveryPage.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\DeliveryProductsDialog.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\WarehouseProductsDialog.baml

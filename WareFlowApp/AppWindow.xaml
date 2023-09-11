@@ -29,7 +29,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                
+
             </Grid.RowDefinitions>
 
             <Border CornerRadius="10,0,0,10"
@@ -125,7 +125,7 @@
                             </ControlTemplate>
                         </RadioButton.Template>
                     </RadioButton>
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="WarehouseButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">
@@ -136,7 +136,7 @@
                                         HorizontalAlignment="Center"
                                         Height="22" Width="22"
                                         Margin="40,0,0,0"/>
-                                            <TextBlock Text="Workshops"
+                                            <TextBlock Text="Warehouses"
                                    FontWeight="Light"
                                    FontFamily="Helvetica"
                                    FontSize="22"
@@ -160,7 +160,7 @@
                             </ControlTemplate>
                         </RadioButton.Template>
                     </RadioButton>
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="DeliveriesButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">
@@ -248,5 +248,5 @@
             </Border>
         </Grid>
     </Border>
-    
+
 </Window>

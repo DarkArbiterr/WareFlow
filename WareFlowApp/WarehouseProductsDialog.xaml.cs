@@ -1,5 +1,8 @@
-﻿using System;
+﻿using BackendLibrary.Models;
+using BackendLibrary.DataAccess;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +22,22 @@ namespace WareFlowApp
     /// </summary>
     public partial class WarehouseProductsDialog : Window
     {
-        public WarehouseProductsDialog()
+        private readonly WarehouseModel warehouse;
+        private ObservableCollection<ProductModel> productsList = new ObservableCollection<ProductModel>();
+
+        public WarehouseProductsDialog(WarehouseModel warehouse)
         {
             InitializeComponent();
+            this.warehouse = warehouse;
+
+            // Ustaw tytuł okna dialogowego
+            Title = $"Produkty w magazynie: {warehouse.Name}";
+
+            // Przykładowe dane produktów w magazynie (możesz dostosować to do swoich potrzeb)
+            productsList = ProductData.GetProductsByWarehouse(warehouse.Id);
+
+            // Ustaw listę produktów jako źródło danych ListView
+            productsListView.ItemsSource = productsList.ToList();
         }
     }
 }

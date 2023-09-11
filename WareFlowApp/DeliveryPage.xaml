@@ -5,10 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WareFlowApp"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="700"
       Title="DeliveryPage">
 
     <Grid>
-        
+        <StackPanel>
+            <ListView Name="deliveryListView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseDoubleClick="DeliveryListView_MouseDoubleClick">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}" />
+                        <GridViewColumn Header="Date" Width="150" DisplayMemberBinding="{Binding Date}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Content="Dodaj dostawę" Click="AddDeliveryButton_Click" />
+        </StackPanel>
     </Grid>
 </Page>
