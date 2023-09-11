@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ServiceProcess;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,53 @@ namespace WareFlowApp
     /// </summary>
     public partial class AppWindow : Window
     {
+        string serviceName = "WareflowLoggerService";
+        ServiceController serviceController = new ServiceController("WareflowLoggerService");
         public AppWindow()
         {
             InitializeComponent();
+
+            try
+            {
+                if (serviceController.Status != ServiceControllerStatus.Running)
+                {
+                    string[] args = {"TestUser"};
+
+                    serviceController.Start(args);
+                    serviceController.WaitForStatus(ServiceControllerStatus.Running, TimeSpan.FromSeconds(5));
+                    Console.WriteLine("Service started successfully.");
+                    serviceController.ExecuteCommand(200);
+                }
+                else
+                {
+                    Console.WriteLine("Service is already running.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("!!!Error starting the service: " + ex.Message);
+            }
+        }
+
+        ~AppWindow()
+        {
+            try
+            {
+                if (serviceController.Status != ServiceControllerStatus.Stopped)
+                {
+                    serviceController.Stop();
+                    serviceController.WaitForStatus(ServiceControllerStatus.Stopped, TimeSpan.FromSeconds(5));
+                    Console.WriteLine("Service stopped successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Service is already stopped.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error stopping the service: " + ex.Message);
+            }
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)

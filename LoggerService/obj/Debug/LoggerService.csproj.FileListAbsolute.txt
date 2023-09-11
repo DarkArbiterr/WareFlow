@@ -5,3 +5,5 @@ C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.
 C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.csproj.CoreCompileInputs.cache
 C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.exe
 C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.pdb
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.ProjectInstaller.resources
+C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\obj\Debug\LoggerService.csproj.GenerateResource.cache

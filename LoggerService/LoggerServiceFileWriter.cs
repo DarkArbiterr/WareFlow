@@ -39,9 +39,9 @@ namespace LoggerService
             }
         }
 
-        public static void ServiceOnTest()
+        public static void ServiceOnTest(string username)
         {
-            WriteToFile("[" + DateTime.Now + "]: Service test performed.");
+            WriteToFile("[" + DateTime.Now + "]: Service test performed by user " + username + ".");
         }
 
         public static void ServiceOnStart()

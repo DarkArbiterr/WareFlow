@@ -1,6 +1,6 @@
 ﻿namespace LoggerService
 {
-    partial class Service1
+    partial class WareflowLoggerService
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
