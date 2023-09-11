@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {}
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
+    "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
+        "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj",
         "projectName": "BackendLibrary",
-        "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj",
-        "packagesPath": "C:\\Users\\Grancu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\obj\\",
+        "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj",
+        "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Grancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -55,7 +55,7 @@
                                    Margin="10,0,0,0"/>
                     </StackPanel>
 
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="HomeButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">
@@ -90,7 +90,7 @@
                             </ControlTemplate>
                         </RadioButton.Template>
                     </RadioButton>
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="ProductButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">
@@ -241,7 +241,10 @@
                         <GradientStop Color="#FF151515" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
-                
+                <Grid x:Name="MainGrid" Margin="0,85,0,0">
+
+                    <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+                </Grid>
             </Border>
         </Grid>
     </Border>

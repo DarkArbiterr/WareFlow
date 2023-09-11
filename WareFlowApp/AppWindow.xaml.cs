@@ -74,5 +74,15 @@ namespace WareFlowApp
         {
 
         }
+
+        private void HomeButtonClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ProductButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new ProductPage();
+        }
     }
 }

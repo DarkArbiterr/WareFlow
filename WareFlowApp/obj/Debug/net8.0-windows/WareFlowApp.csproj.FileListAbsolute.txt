@@ -348,3 +348,7 @@ C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\W
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\ref\WareFlowApp.dll
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\bin\Debug\net8.0-windows\System.ServiceProcess.ServiceController.dll
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.ServiceProcess.ServiceController.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\System.ServiceProcess.ServiceController.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.ServiceProcess.ServiceController.dll
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.baml
