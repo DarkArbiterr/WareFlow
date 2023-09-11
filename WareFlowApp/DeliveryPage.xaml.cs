@@ -59,7 +59,9 @@ namespace WareFlowApp
                 DeliveryData.InsertDelivery(newDelivery);
                 
                 DeliveryData.InsertDeliveryProducts(DeliveryData.GetMaxId(), selectedProducts);
-                
+
+                AppWindow.serviceController.ExecuteCommand(204);
+
                 // Odśwież listę dostaw
                 deliveryListView.ItemsSource = null;
                 deliveryListView.ItemsSource = deliveryList;
