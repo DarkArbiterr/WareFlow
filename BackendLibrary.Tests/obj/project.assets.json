@@ -7241,19 +7241,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DarkArbiter\\.nuget\\packages\\": {}
+    "C:\\Users\\Grancu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
       "projectName": "BackendLibrary.Tests",
-      "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
-      "packagesPath": "C:\\Users\\DarkArbiter\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\BackendLibrary.Tests.csproj",
+      "packagesPath": "C:\\Users\\Grancu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\DarkArbiter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Grancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7261,14 +7266,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj": {
-              "projectPath": "D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary\\BackendLibrary.csproj"
+            "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj": {
+              "projectPath": "C:\\Users\\Grancu\\Documents\\GitHub\\WareFlow\\BackendLibrary\\BackendLibrary.csproj"
             }
           }
         }
@@ -7360,13 +7366,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej D:\\Users\\DarkArbiter\\Source\\Repos\\WareFlow2.0\\BackendLibrary.Tests\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
