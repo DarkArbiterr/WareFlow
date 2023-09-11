@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace LoggerService
 {
-    public partial class Service1 : ServiceBase
+    public partial class WareflowLoggerService : ServiceBase
     {
-        public static string username;
+        public static string username = "user";
 
-        public Service1()
+        public WareflowLoggerService()
         {
             InitializeComponent();
         }
@@ -39,8 +39,8 @@ namespace LoggerService
             switch(command)
             {
                 case 200:
-                    LoggerServiceFileWriter.ServiceOnTest();
-                    EventLog.WriteEntry("Service test command used.");
+                    LoggerServiceFileWriter.ServiceOnTest(username);
+                    EventLog.WriteEntry("Service test command used by user " + username + ".");
 
                     break;
                 case 201:
