@@ -28,6 +28,9 @@
                 <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                
+            </Grid.RowDefinitions>
 
             <Border CornerRadius="10,0,0,10"
                     Grid.Column="0">
