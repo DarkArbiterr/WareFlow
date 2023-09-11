@@ -352,3 +352,5 @@ D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windo
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.ServiceProcess.ServiceController.dll
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.g.cs
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.baml
