@@ -92,6 +92,26 @@ namespace LoggerService
                     EventLog.WriteEntry("User " + username + " added a new warehouse.");
 
                     break;
+
+                case 213:
+                    LoggerServiceFileWriter.ServiceOnProductDelete(username);
+                    EventLog.WriteEntry("User " + username + " deleted a product.");
+                    break;
+
+                case 214:
+                    LoggerServiceFileWriter.ServiceOnDeliveryDelete(username);
+                    EventLog.WriteEntry("User " + username + " deleted a delivery.");
+                    break;
+
+                case 215:
+                    LoggerServiceFileWriter.ServiceOnRemovalDelete(username);
+                    EventLog.WriteEntry("User " + username + " deleted a removal.");
+                    break;
+
+                case 216:
+                    LoggerServiceFileWriter.ServiceOnWarehouseDelete(username);
+                    EventLog.WriteEntry("User " + username + " deleted a warehouse.");
+                    break;
             }
         }
     }

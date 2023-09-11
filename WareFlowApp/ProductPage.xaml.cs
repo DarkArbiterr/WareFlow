@@ -1,4 +1,5 @@
 ﻿using BackendLibrary.Models;
+using BackendLibrary.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
+using System.ServiceProcess;
 
 namespace WareFlowApp
 {
@@ -28,10 +30,8 @@ namespace WareFlowApp
         {
             InitializeComponent();
 
-            // Dodaj przykładowe produkty do listy
-            productList.Add(new ProductModel { Id = 1, Name = "Produkt 1", Description = "Opis produktu 1" });
-            productList.Add(new ProductModel { Id = 2, Name = "Produkt 2", Description = "Opis produktu 2" });
-
+            productList = ProductData.GetAllProducts();
+            
             // Ustaw listę jako źródło danych ListView
             productListView.ItemsSource = productList;
         }
@@ -48,6 +48,10 @@ namespace WareFlowApp
                     // Odśwież listę
                     productListView.ItemsSource = null;
                     productListView.ItemsSource = productList;
+                    //Usuń produkt z bazy
+                    ProductData.DeleteProduct(product.Id);
+                    // Dodaj log
+                    AppWindow.serviceController.ExecuteCommand(213);
                 }
             }
         }
@@ -68,9 +72,15 @@ namespace WareFlowApp
                 ProductModel newProduct = addProductDialog.GetProductData();
                 productList.Add(newProduct);
 
+                //Dodaj do bazy
+                ProductData.InsertProduct(newProduct);
+
                 // Odśwież listę
                 productListView.ItemsSource = null;
                 productListView.ItemsSource = productList;
+
+                // Dodaj log
+                AppWindow.serviceController.ExecuteCommand(203);
             }
         }
     }

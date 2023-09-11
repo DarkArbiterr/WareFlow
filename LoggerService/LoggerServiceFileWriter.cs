@@ -82,5 +82,26 @@ namespace LoggerService
         {
             WriteToFile("[" + DateTime.Now + "]: User " + username + " added a new warehouse");
         }
+
+        public static void ServiceOnProductDelete(string username)
+        {
+            WriteToFile("[" + DateTime.Now + "]: User " + username + " deleted a product");
+        }
+
+        public static void ServiceOnDeliveryDelete(string username)
+        {
+            WriteToFile("[" + DateTime.Now + "]: User " + username + " deleted a delivery");
+        }
+
+        public static void ServiceOnRemovalDelete(string username)
+        {
+            WriteToFile("[" + DateTime.Now + "]: User " + username + " deleted a removal");
+        }
+
+        public static void ServiceOnWarehouseDelete(string username)
+        {
+            WriteToFile("[" + DateTime.Now + "]: User " + username + " deleted a warehouse");
+        }
+
     }
 }

@@ -354,3 +354,11 @@ D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windo
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.baml
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.g.cs
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\WarehousePage.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddWarehouseDialog.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\WarehousePage.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\AddWarehouseDialog.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.baml
