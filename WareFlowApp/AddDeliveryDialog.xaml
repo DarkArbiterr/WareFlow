@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WareFlowApp"
         mc:Ignorable="d"
-        Title="AddDeliveryDialog" Height="450" Width="800">
+        Title="Dodaj dostawę" Height="400" Width="600">
     <Grid>
-        
+        <StackPanel Margin="10">
+            <Label Content="Data dostawy:" />
+            <DatePicker x:Name="datePicker" />
+        </StackPanel>
+        <ListView Name="productListView" Margin="10,77,10,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Description" Width="200" DisplayMemberBinding="{Binding Description}" />
+                    <GridViewColumn Header="Select" Width="70">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Dodaj" Click="AddButton_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>

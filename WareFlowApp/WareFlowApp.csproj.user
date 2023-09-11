@@ -7,27 +7,60 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AddProductDialog.xaml.cs">
+    <Compile Update="AddDeliveryDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddWarehouseDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="AppWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DeliveryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DeliveryProductsDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ProductPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WarehousePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WarehouseProductsDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddDeliveryDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AddProductDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="AddWarehouseDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AppWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DeliveryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DeliveryProductsDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProductPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WarehousePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WarehouseProductsDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

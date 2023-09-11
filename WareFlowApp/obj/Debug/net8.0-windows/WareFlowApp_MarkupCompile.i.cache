@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\App.xaml
-5751710210
+11559481112
 1-760726084
-9-979084230
+151413479363
 2421517037573
-AddProductDialog.xaml;AppWindow.xaml;CustomStyles.xaml;MainWindow.xaml;ProductPage.xaml;
+AddDeliveryDialog.xaml;AddProductDialog.xaml;AddWarehouseDialog.xaml;AppWindow.xaml;CustomStyles.xaml;DeliveryPage.xaml;DeliveryProductsDialog.xaml;MainWindow.xaml;ProductPage.xaml;WarehousePage.xaml;WarehouseProductsDialog.xaml;
 
 True
 

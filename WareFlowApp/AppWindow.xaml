@@ -125,7 +125,7 @@
                             </ControlTemplate>
                         </RadioButton.Template>
                     </RadioButton>
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="WarehouseButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">
@@ -160,7 +160,7 @@
                             </ControlTemplate>
                         </RadioButton.Template>
                     </RadioButton>
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="DeliveriesButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">

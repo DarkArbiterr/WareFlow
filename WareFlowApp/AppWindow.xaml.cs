@@ -84,5 +84,15 @@ namespace WareFlowApp
         {
             MainFrame.Content = new ProductPage();
         }
+
+        private void WarehouseButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new WarehousePage();
+        }
+
+        private void DeliveriesButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new DeliveryPage();
+        }
     }
 }

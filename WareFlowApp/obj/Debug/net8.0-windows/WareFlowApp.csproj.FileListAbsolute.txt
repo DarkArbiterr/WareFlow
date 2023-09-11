@@ -354,3 +354,15 @@ D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windo
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\ProductPage.baml
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.g.cs
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddProductDialog.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddWarehouseDialog.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\WarehousePage.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddWarehouseDialog.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\WarehousePage.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\WarehouseProductsDialog.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\WarehouseProductsDialog.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddDeliveryDialog.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\DeliveryPage.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\DeliveryProductsDialog.g.cs
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\AddDeliveryDialog.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\DeliveryPage.baml
+D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\DeliveryProductsDialog.baml
