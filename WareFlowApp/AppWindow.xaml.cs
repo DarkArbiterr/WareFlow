@@ -22,7 +22,7 @@ namespace WareFlowApp
     public partial class AppWindow : Window
     {
         string serviceName = "WareflowLoggerService";
-        ServiceController serviceController = new ServiceController("WareflowLoggerService");
+        public static ServiceController serviceController = new ServiceController("WareflowLoggerService");
         public AppWindow()
         {
             InitializeComponent();

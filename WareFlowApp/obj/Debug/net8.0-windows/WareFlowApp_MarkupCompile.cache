@@ -4,17 +4,26 @@
 exe
 C#
 .cs
-D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\obj\Debug\net8.0-windows\
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\
 WareFlowApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 D:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\App.xaml
 11559481112
 1-760726084
 13-418321231
 2421517037573
 AddDeliveryDialog.xaml;AddProductDialog.xaml;AddWarehouseDialog.xaml;AppWindow.xaml;CustomStyles.xaml;DeliveryPage.xaml;DeliveryProductsDialog.xaml;MainWindow.xaml;ProductPage.xaml;WarehousePage.xaml;WarehouseProductsDialog.xaml;
+=======
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\App.xaml
+71088739716
+1-760726084
+91206952565
+242-1334453704
+AddProductDialog.xaml;AddWarehouseDialog.xaml;AppWindow.xaml;CustomStyles.xaml;MainWindow.xaml;ProductPage.xaml;WarehousePage.xaml;
+>>>>>>> e295889fd069303a6a19fe429345e60c85e59315
 
 False
 

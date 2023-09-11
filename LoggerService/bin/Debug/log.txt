@@ -5,3 +5,12 @@
 [11.09.2023 17:28:25]: Service stop.
 [11.09.2023 17:42:36]: Service start.
 [11.09.2023 17:42:36]: Service test performed by user TestUser.
+[11.09.2023 19:44:00]: User TestUser added a new product
+[11.09.2023 19:50:44]: User TestUser added a new product
+[11.09.2023 19:52:19]: User TestUser added a new product
+[11.09.2023 19:58:47]: Service stop.
+[11.09.2023 20:00:42]: Service start.
+[11.09.2023 20:00:42]: Service test performed by user TestUser.
+[11.09.2023 20:00:58]: User TestUser added a new product
+[11.09.2023 20:01:08]: User TestUser deleted a product
+[11.09.2023 20:01:08]: User TestUser deleted a product

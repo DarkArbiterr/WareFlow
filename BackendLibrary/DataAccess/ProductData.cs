@@ -9,6 +9,7 @@ using System.Data;
 using Dapper;
 using System.Linq;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Xml.Linq;
 
 namespace BackendLibrary.DataAccess
 {
@@ -18,11 +19,11 @@ namespace BackendLibrary.DataAccess
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM product";
+                string sql = "SELECT productId AS Id, name AS Name, `desc` AS Description FROM product";
+;
                 var data = connection.Query<ProductModel>(sql).ToList();
-
                 ObservableCollection<ProductModel> data2 = new ObservableCollection<ProductModel>(data);
-
+                
                 return data2;
             }
         }

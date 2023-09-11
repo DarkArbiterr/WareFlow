@@ -1,5 +1,6 @@
 ﻿
 
+<<<<<<< HEAD
 FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\AddDeliveryDialog.xaml;;
 FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\AddProductDialog.xaml;;
 FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\AddWarehouseDialog.xaml;;
@@ -10,4 +11,12 @@ FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\MainWindow.xaml;;
 FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\ProductPage.xaml;;
 FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\WarehousePage.xaml;;
 FD:\Users\DarkArbiter\Source\Repos\WareFlow2.0\WareFlowApp\WarehouseProductsDialog.xaml;;
+=======
+FC:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\AddProductDialog.xaml;;
+FC:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\AddWarehouseDialog.xaml;;
+FC:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\AppWindow.xaml;;
+FC:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\MainWindow.xaml;;
+FC:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\ProductPage.xaml;;
+FC:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\WarehousePage.xaml;;
+>>>>>>> e295889fd069303a6a19fe429345e60c85e59315
 
