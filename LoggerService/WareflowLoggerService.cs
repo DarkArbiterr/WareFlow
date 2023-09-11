@@ -22,8 +22,22 @@ namespace LoggerService
         protected override void OnStart(string[] args)
         {
             username = args[0];
+
+            if (!EventLog.SourceExists("WareflowLoggerServiceSource"))
+            {
+                EventLog.CreateEventSource("WareflowLoggerServiceSource", "Application");
+            }
+
+            try
+            {
+                EventLog.WriteEntry("Service started.", EventLogEntryType.Information);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error writing to event log: " + ex.Message);
+            }
+
             LoggerServiceFileWriter.ServiceOnStart();
-            EventLog.WriteEntry("Service started.");
         }
 
         protected override void OnStop()
