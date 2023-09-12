@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendLibrary.Tests", "Bac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{7B1630AA-C50D-423E-B947-D0166E923F88}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WareflowSetup", "WareflowSetup\WareflowSetup.vdproj", "{510752FD-9292-4181-B37A-3FAE00C941CA}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WareflowSetup", "WareflowSetup\WareflowSetup.vdproj", "{EE14CC52-6F68-44E7-B5D3-F6FEE5E31B48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,8 +35,8 @@ Global
 		{7B1630AA-C50D-423E-B947-D0166E923F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B1630AA-C50D-423E-B947-D0166E923F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B1630AA-C50D-423E-B947-D0166E923F88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{510752FD-9292-4181-B37A-3FAE00C941CA}.Debug|Any CPU.ActiveCfg = Debug
-		{510752FD-9292-4181-B37A-3FAE00C941CA}.Release|Any CPU.ActiveCfg = Release
+		{EE14CC52-6F68-44E7-B5D3-F6FEE5E31B48}.Debug|Any CPU.ActiveCfg = Debug
+		{EE14CC52-6F68-44E7-B5D3-F6FEE5E31B48}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

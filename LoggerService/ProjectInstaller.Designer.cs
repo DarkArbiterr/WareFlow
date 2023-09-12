@@ -36,12 +36,14 @@
             this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
             this.serviceProcessInstaller1.Password = null;
             this.serviceProcessInstaller1.Username = null;
+            this.serviceProcessInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceProcessInstaller1_AfterInstall);
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Wareflow's service used to write logfiles.";
+            this.serviceInstaller1.Description = "Wareflow\'s service used to write logfiles.";
             this.serviceInstaller1.DisplayName = "WareflowLoggerService";
             this.serviceInstaller1.ServiceName = "WareflowLoggerService";
+            this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 

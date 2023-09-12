@@ -89,6 +89,9 @@ namespace BackendLibrary.DataAccess
 
         public static void InsertDeliveryProducts(int deliveryId, ObservableCollection<ProductModel>selectedProducts)
         {
+            if (selectedProducts.Count == 0)
+                throw new Exception("NoProductsToAdd");
+
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
                 foreach (var product in selectedProducts)

@@ -8,6 +8,8 @@ using BackendLibrary.DataAccess;
 using Xunit;
 using XUnitPriorityOrderer;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Collections.ObjectModel;
+using MySql.Data.MySqlClient;
 
 namespace BackendLibrary.Tests.Tests
 {
@@ -65,6 +67,18 @@ namespace BackendLibrary.Tests.Tests
             DeliveryModel deletedDelivery = await Task.Run(() => DeliveryData.GetDelivery(id));
 
             Assert.Equal(-1, deletedDelivery.Id);
+        }
+
+        [Fact, Order(6)]
+        public void InsertDeliveryProductsTestShouldThrowExceptionIfSelectedProductsEmpty()
+        {
+            ObservableCollection<ProductModel> selectedProducts = new ObservableCollection<ProductModel>();
+
+            Assert.Throws<Exception>(() =>
+            {
+                DeliveryData.InsertDeliveryProducts(0, selectedProducts);
+            });
+            
         }
     }
 }

@@ -73,7 +73,7 @@ namespace WareFlowApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WareFlowApp;V1.0.0.0;component/appwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WareFlowApp;component/appwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AppWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

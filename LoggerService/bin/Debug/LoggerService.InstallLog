@@ -165,3 +165,12 @@ Uwzględnione parametry to:
    logtoconsole = 
    logfile = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.InstallLog
    assemblypath = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe
+Odinstalowywanie zestawu 'C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.InstallLog
+   assemblypath = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe
+Usuwanie źródła EventLog WareflowLoggerService.
+Trwa usuwanie usługi WareflowLoggerService z systemu...
+Usługa WareflowLoggerService została pomyślnie usunięta z systemu.
+Próba zatrzymania usługi WareflowLoggerService.
