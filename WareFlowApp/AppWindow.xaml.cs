@@ -93,5 +93,10 @@ namespace WareFlowApp
         {
             MainFrame.Content = new DeliveryPage();
         }
+
+        private void RemovalsButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new RemovalPage();
+        }
     }
 }

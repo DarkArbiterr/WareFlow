@@ -18,7 +18,7 @@ namespace BackendLibrary.DataAccess
         {
             using (IDbConnection connection = new MySqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM removal";
+                string sql = "SELECT `removalId` AS Id, `warehouseId` AS WarehouseId, `date` AS Date FROM removal";
                 var data = connection.Query<RemovalModel>(sql).ToList();
 
                 ObservableCollection<RemovalModel> data2 = new ObservableCollection<RemovalModel>(data);
@@ -84,6 +84,24 @@ namespace BackendLibrary.DataAccess
                 string sql = $"DELETE FROM removal WHERE removalId = {id}";
 
                 connection.Execute(sql);
+            }
+        }
+
+        public static void InsertRemovalProducts(int removalId, ObservableCollection<ProductModel> selectedProducts)
+        {
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                foreach (var product in selectedProducts)
+                {
+                    string sql = "INSERT INTO productremoval (removalId, productId) VALUES (@RemovalId, @ProductId);";
+                    var parameters = new
+                    {
+                        RemovalId = removalId,
+                        ProductId = product.Id,
+                    };
+
+                    connection.Execute(sql, parameters);
+                }
             }
         }
     }

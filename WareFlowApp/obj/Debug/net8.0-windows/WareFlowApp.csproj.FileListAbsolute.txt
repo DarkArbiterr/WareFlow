@@ -371,3 +371,7 @@ C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\D
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\DeliveryProductsDialog.baml
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\WarehouseProductsDialog.baml
 C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\bin\Debug\net8.0-windows\WareFlowApp.dll.config
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\RemovalPage.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\RemovalProductsDialog.g.cs
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\RemovalPage.baml
+C:\Users\Grancu\Documents\GitHub\WareFlow\WareFlowApp\obj\Debug\net8.0-windows\RemovalProductsDialog.baml

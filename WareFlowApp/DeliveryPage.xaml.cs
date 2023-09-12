@@ -53,14 +53,20 @@ namespace WareFlowApp
             if (result.HasValue && result.Value)
             {
                 DeliveryModel newDelivery = addDeliveryDialog.GetDeliveryData();
+                RemovalModel newRemoval = new RemovalModel(newDelivery.WarehouseId, newDelivery.Date);
+
                 selectedProducts = new ObservableCollection<ProductModel>(addDeliveryDialog.GetSelectedProducts());
                 deliveryList.Add(newDelivery);
 
+                
                 DeliveryData.InsertDelivery(newDelivery);
+                RemovalData.InsertRemoval(newRemoval);
                 
                 DeliveryData.InsertDeliveryProducts(DeliveryData.GetMaxId(), selectedProducts);
+                RemovalData.InsertRemovalProducts(RemovalData.GetMaxId(), selectedProducts);
 
                 AppWindow.serviceController.ExecuteCommand(204);
+                AppWindow.serviceController.ExecuteCommand(205);
 
                 // Odśwież listę dostaw
                 deliveryListView.ItemsSource = null;
@@ -86,8 +92,6 @@ namespace WareFlowApp
 
             // Wyświetl okno dialogowe
             deliveryProductsDialog.ShowDialog();
-        
         }
-        
     }
 }

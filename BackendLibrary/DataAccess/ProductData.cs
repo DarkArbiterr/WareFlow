@@ -144,5 +144,20 @@ namespace BackendLibrary.DataAccess
             }
         }
 
+        public static ObservableCollection<ProductModel> GetProductsByRemoval(int removalId)
+        {
+            using (IDbConnection connection = new MySqlConnection(connectionString))
+            {
+                string sql = "SELECT p.productId AS Id, p.name AS Name, p.`desc` AS Description " +
+                             "FROM product p " +
+                             "INNER JOIN productremoval pr ON p.productId = pr.productId " +
+                             "WHERE pr.removalId = @RemovalId";
+
+                var data = connection.Query<ProductModel>(sql, new { RemovalId = removalId }).ToList();
+                ObservableCollection<ProductModel> data2 = new ObservableCollection<ProductModel>(data);
+
+                return data2;
+            }
+        }
     }
 }

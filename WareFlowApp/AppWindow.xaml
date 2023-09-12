@@ -195,7 +195,7 @@
                             </ControlTemplate>
                         </RadioButton.Template>
                     </RadioButton>
-                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0">
+                    <RadioButton VerticalAlignment="Center" Height="60" Margin="0" Click="RemovalsButtonClick">
                         <RadioButton.Template>
                             <ControlTemplate TargetType="RadioButton">
                                 <Grid Background="Transparent">

@@ -152,3 +152,16 @@ Usuwanie źródła EventLog WareflowLoggerService.
 Trwa usuwanie usługi WareflowLoggerService z systemu...
 Usługa WareflowLoggerService została pomyślnie usunięta z systemu.
 Próba zatrzymania usługi WareflowLoggerService.
+Instalowanie zestawu 'C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.InstallLog
+   assemblypath = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe
+Trwa instalowanie usługi WareflowLoggerService...
+Usługa WareflowLoggerService została zainstalowana pomyślnie.
+Trwa tworzenie źródła EventLog WareflowLoggerService w dzienniku Application...
+Zatwierdzanie zestawu 'C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.InstallLog
+   assemblypath = C:\Users\Grancu\Documents\GitHub\WareFlow\LoggerService\bin\Debug\LoggerService.exe
