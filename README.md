@@ -7,7 +7,7 @@ Projekt zaliczeniowy - Modelowanie i analiza systemów informatycznych
 
 ### Logowanie i Rejestracja
 
-### Głowne okno aplikacji
+### Głowne Okno Aplikacji
 
 ### Produkty
 
@@ -16,3 +16,12 @@ Projekt zaliczeniowy - Modelowanie i analiza systemów informatycznych
 ### Dostawy
 
 ### Wydania
+
+## Zarządzanie Pracą
+
+### Github Pojects
+
+### Gałęzie i Pull Request
+
+### Code Review
+
