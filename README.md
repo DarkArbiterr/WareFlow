@@ -3,6 +3,10 @@ Projekt zaliczeniowy - Modelowanie i analiza systemów informatycznych
 
 ## Baza Danych
 
+## Biblioteka
+
+## Testy Jednostkowe
+
 ## Aplikacja
 
 ### Logowanie i Rejestracja
@@ -16,6 +20,8 @@ Projekt zaliczeniowy - Modelowanie i analiza systemów informatycznych
 ### Dostawy
 
 ### Wydania
+
+## Usługa Windows Service
 
 ## Zarządzanie Pracą
 
