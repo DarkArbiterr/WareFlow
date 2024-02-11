@@ -17,7 +17,8 @@ W folderze projektu znajduje się plik *.sql* z dumpem bazy danych do własnego 
 Projekt zawiera **bibliotekę** na którą składają się:
 * **Modele Danych:** deklaracje klas obiektów otrzymywanych z bazy danych wraz z konstruktorami.
 * **Dostęp do Danych:** zawiera funkcje zapytań do bazy danych (operacje *CRUD* itp.).
-Po za tym, biblioteka również przetrzymuje informacje niezbędne do połączenia lokalnego z bazą danych (*SQLConnector*). Do łączenia z bazą wykorzystano bibliotekę **Dapper**.
+Po za tym, biblioteka również przetrzymuje informacje niezbędne do połączenia lokalnego z bazą danych (*SQLConnector*). Do łączenia z bazą wykorzystano bibliotekę **Dapper**.\
+Biblioteka jest również **automatycznie dokumentowana** z wykorzystaniem narzędzia ???
 
 ## Testy Jednostkowe
 Do każdej funkcji z biblioteki został napisany **test jednostkowy**. Biblioteka i testy były pisane zgodnie z metodyką **TDD** (*Test Driven Development*). Do stworzenia testów korzystano z biblioteki **XUnit**.
