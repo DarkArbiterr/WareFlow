@@ -3,8 +3,8 @@
 <img align="left" src="https://github.com/DarkArbiterr/WareFlow/assets/75552617/b4224528-7268-479a-ac2e-cf617bea4c1a">
 
 Wareflow to **aplikacja desktopowa** oraz **usługa Windows Service** stworzona w celu zoptymalizowania pracy z produktami i magazynem. Pozwala na zarządzanie magazynami jak i dostawami i wydaniami towarów.
-Projekt został napisany przy użyciu **WPF**, **języka C#**, testów **XUnit** i bazy danych **MySQL**.\
-\
+Projekt został napisany przy użyciu **WPF**, **języka C#**, testów **XUnit** i bazy danych **MySQL**.
+<div style="clear:both"></div>
 ## Baza Danych
 Wykorzystano bazę danych MySQL postawioną lokalnie. Baza została stworzona w oparciu o poniższy schemat:
 
