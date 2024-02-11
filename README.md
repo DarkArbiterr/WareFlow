@@ -2,9 +2,9 @@
 
 <img align="left" src="https://github.com/DarkArbiterr/WareFlow/assets/75552617/b4224528-7268-479a-ac2e-cf617bea4c1a">
 
-Wareflow to **aplikacja desktopowa** oraz **usługa Windows Service** stworzona w celu zoptymalizowania pracy z produktami i magazynem. Pozwala na zarządzanie magazynami jak i dostawami i wydaniami towarów./
-Projekt został napisany przy użyciu **WPF**, **języka C#**, testów **XUnit** i bazy danych **MySQL**.
-
+Wareflow to **aplikacja desktopowa** oraz **usługa Windows Service** stworzona w celu zoptymalizowania pracy z produktami i magazynem. Pozwala na zarządzanie magazynami jak i dostawami i wydaniami towarów.
+Projekt został napisany przy użyciu **WPF**, **języka C#**, testów **XUnit** i bazy danych **MySQL**.\
+\
 ## Baza Danych
 Wykorzystano bazę danych MySQL postawioną lokalnie. Baza została stworzona w oparciu o poniższy schemat:
 
@@ -30,8 +30,8 @@ Logowanie wykorzystuje zapisane **email** i **hasło** z bazy danych. Obecnie ni
 ![Zrzut ekranu 2024-02-11 163652](https://github.com/DarkArbiterr/WareFlow/assets/75552617/dfd36a5b-ea31-4c08-8538-15e19fdb4d65)
 
 > [!NOTE]
-> W celu przetestowania aplikacji, można skorzystać z testowego użytkownika:/
-> **Email:** fakemail/
+> W celu przetestowania aplikacji, można skorzystać z testowego użytkownika:\
+> **Email:** fakemail\
 > **Hasło:** fakeuser
 
 ### Głowne Okno Aplikacji
