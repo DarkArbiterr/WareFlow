@@ -1,6 +1,6 @@
 # WareFlow
 
-<img align="left" src="file:///C:/Users/darka/OneDrive/Obrazy/Zrzuty%20ekranu/Zrzut%20ekranu%202024-02-11%20163652logo.png">
+<img align="right" src="https://github.com/DarkArbiterr/WareFlow/assets/75552617/b4224528-7268-479a-ac2e-cf617bea4c1a">
 
 
 
