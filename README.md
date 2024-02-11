@@ -1,5 +1,7 @@
 # WareFlow
-Wareflow to **aplikacja desktopowa** oraz **usługa Windows Service** stworzona w celu zoptymalizowania pracy z produktami i magazynem. Pozwala na zarządzanie magazynami jak i dostawami i wydaniami towarów. Projekt został napisany przy użyciu **WPF**, **języka C#** i bazy danych **MySQL**.
+Wareflow to **aplikacja desktopowa** oraz **usługa Windows Service** stworzona w celu zoptymalizowania pracy z produktami i magazynem. Pozwala na zarządzanie magazynami jak i dostawami i wydaniami towarów. Projekt został napisany przy użyciu **WPF**, **języka C#**, testów **XUnit** i bazy danych **MySQL**.
+
+![Zrzut ekranu 2024-02-11 163652logo](https://github.com/DarkArbiterr/WareFlow/assets/75552617/7254d85b-7a72-4eec-9310-020e9e9ef991)
 
 ## Baza Danych
 Wykorzystano bazę danych MySQL postawioną lokalnie. Baza została stworzona w oparciu o poniższy schemat:
@@ -21,7 +23,7 @@ Do każdej funkcji z biblioteki został napisany **test jednostkowy**. Bibliotek
 Struktura aplikacji to dwa okna: pierwsze do logowania i drugie bazowe okno aplikacji. Do stworzenia frontendu, oprócz podstawowych kontrolek i stylów WPF wykorzystano również biblioteki **MahApps** oraz **FontAwesome**.
 
 ### Logowanie i Rejestracja
-Logowanie wykorzystuje zapisane email i hasło z bazy danych. Obecnie nie jest możliwa rejestracja nowego użyktownika.
+Logowanie wykorzystuje zapisane **email** i **hasło** z bazy danych. Obecnie nie jest możliwa rejestracja nowego użyktownika.
 
 ![Zrzut ekranu 2024-02-11 163652](https://github.com/DarkArbiterr/WareFlow/assets/75552617/dfd36a5b-ea31-4c08-8538-15e19fdb4d65)
 
@@ -31,7 +33,7 @@ Logowanie wykorzystuje zapisane email i hasło z bazy danych. Obecnie nie jest m
 > **Hasło:** fakeuser
 
 ### Głowne Okno Aplikacji
-Główne okno zawiera menu z zakładkami, które wyświetlają się po kliknięciu odpowiednio w prawym panelu aplikacji jako **Pages**.
+Główne okno zawiera **menu** z zakładkami, które wyświetlają się po kliknięciu odpowiednio w prawym panelu aplikacji jako **Pages**.
 
 ![Zrzut ekranu 2024-02-11 163725](https://github.com/DarkArbiterr/WareFlow/assets/75552617/c51e4c7b-7ec0-4e89-a4f3-64f953c0b5a7)
 
@@ -56,20 +58,23 @@ Pozwala na wprowadzenie do systemu nowego wydania (np. sprzedanie towaru w sklep
 ![Zrzut ekranu 2024-02-11 163950](https://github.com/DarkArbiterr/WareFlow/assets/75552617/050d0acd-fbb2-4d50-973b-d40797c2ef84)
 
 ## Usługa Windows Service
-Usługa monitoruje akcje dokonywane w czasie korzystania z aplikacji. Zapisuje poniższe czynności do pliku z logami oraz wypisuje je na dziennik zdarzeń usługi:
-* Start i stop usługi
-* Logowanie
-* Dodawanie i usuwanie produktów, magazynów, dostaw i wydań
+Usługa monitoruje akcje dokonywane w czasie korzystania z aplikacji. Zapisuje poniższe czynności do **pliku z logami** oraz wypisuje je na **dziennik zdarzeń usługi**:
+* Start i stop usługi.
+* Logowanie.
+* Dodawanie i usuwanie produktów, magazynów, dostaw i wydań.
 
 ## Zarządzanie Pracą
-Głownym aspektem stworzenie aplikacji WareFlow była nauka organizacji pracy i zadań w mini zespole dwuosobowym.
+Głownym aspektem stworzenie aplikacji **WareFlow** była nauka organizacji pracy i zadań w mini zespole dwuosobowym.
 
 ### Github Pojects
-Do zarządzania zadaniami wykorzystano Github Projects. Kanban został podzielony na 4 części: Backlog, In Progress, Code Review i Done. Każde zadanie przed zakończniem poddawane było wzajemnemu Code Review.
+Do zarządzania zadaniami wykorzystano **Github Projects**. **Kanban** został podzielony na 4 części: *Backlog, In Progress, Code Review i Done*. Każde zadanie przed zakończniem poddawane było wzajemnemu **Code Review**.
 
 ### Gałęzie i Pull Request
-Oprócz gałęzi main, każdy z nas posiadał indywidualną gałąź do której wypychał nowe implementacje. Następnie tworzony był Pull Request, druga osoba wtedy weryfikowała kod, dodawała ewentualne komentarze, po czym zatwierdzała i scalała z gałęzią main.
+Oprócz gałęzi **main**, każdy z nas posiadał indywidualną gałąź do której wypychał nowe implementacje. Następnie tworzony był **Pull Request**, druga osoba wtedy weryfikowała kod, dodawała ewentualne komentarze, po czym zatwierdzała i scalała z gałęzią main.
 
 ### Code Review
-Code Review był wykonywany na podstawie Pull Requestów ale też ręcznie w programie w Visual Studio.
+Code Review był wykonywany na podstawie Pull Requestów ale też ręcznie w programie w **Visual Studio**.
+
+## Instalacja
+Projekt zawiera również instalator zbudowany za pomocą narzędzia **WiX** (folder AppInstall).
 
